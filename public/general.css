@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background:url(../pic/photo_2025-08-10_18-07-54.jpg) no-repeat top center;
+    background-size: cover;
+}
