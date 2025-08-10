@@ -4,5 +4,6 @@
     box-sizing: border-box;
 }
 body{
-   background-color: blue;
+    background:url(../pic/b373ba5f-6759-4ec8-a830-a0859c5cb3f0.jpg) no-repeat top center;
+    background-size: cover;
 }
