@@ -1,0 +1,61 @@
+
+.parent{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: 50px auto;
+    box-shadow: 5px 5px 5px red;
+    perspective: 800px;
+    overflow: hidden;
+    img{
+        width: inherit;
+        height: inherit;
+    }
+    .cover{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        background:url(../photo_2025-08-10_18-07-54.jpg) no-repeat;
+        background-size: cover;
+        top: 100%;
+        transition: all 600ms;
+     
+        h1{
+            text-align: center;
+            color:darkmagenta;
+            margin-top: 5px ;
+            text-shadow:5px 5px 7px red;
+            text-transform: capitalize;
+            transform: translateY(200px);
+                        opacity: 0;
+transition-delay: 500ms;
+transition: 1000ms;
+        }
+          h2{
+            text-align: center;
+            color:red;
+            margin-top: 120px ;
+            text-transform: capitalize;
+            transform: translateY(100px);
+            background-color: chartreuse;
+            opacity: 0;
+            text-align: center;
+            width: 30%;
+            margin-left: 131px;
+            transition-delay: 2000ms;
+transition: 1600ms;
+           &:hover{
+            color: black;
+            background-color: white;
+           }
+        }
+    }
+    &:hover>.cover{
+top: 0px;
+    }
+    &:hover>.cover>h1,
+    &:hover>.cover>h2{
+transform: translateY(0deg);
+opacity: 1;
+        }
+}
