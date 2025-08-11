@@ -22,7 +22,7 @@
      
         h1{
             text-align: center;
-            color:darkmagenta;
+            color:red;
             margin-top: 5px ;
             text-shadow:5px 5px 7px red;
             text-transform: capitalize;
@@ -31,21 +31,26 @@
 transition-delay: 500ms;
 transition: 1000ms;
         }
-          h2{
+          a{
             text-align: center;
             color:red;
-            margin-top: 120px ;
+            margin-bottom: 800px ;
             text-transform: capitalize;
             transform: translateY(100px);
-            background-color: chartreuse;
+            background:url(../photo_2025-08-10_18-07-54.jpg) no-repeat;
+            background-size: cover;
             opacity: 0;
+            height: 70px;
+            font-size: 25px;
             text-align: center;
-            width: 30%;
-            margin-left: 131px;
+            border-radius: 30px;
+            width: 50%;
+            margin-left: 145px;
             transition-delay: 2000ms;
+            text-decoration:none ;
 transition: 1600ms;
            &:hover{
-            color: black;
+            color:chartreuse;
             background-color: white;
            }
         }
@@ -54,7 +59,7 @@ transition: 1600ms;
 top: 0px;
     }
     &:hover>.cover>h1,
-    &:hover>.cover>h2{
+    &:hover>.cover>a{
 transform: translateY(0deg);
 opacity: 1;
         }
